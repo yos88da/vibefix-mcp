@@ -1,0 +1,11 @@
+{
+  "name": "vibefix",
+  "displayName": "VibeFix",
+  "version": "1.1.0",
+  "description": "Triage for broken apps built with Lovable, Base44, v0, Bolt or Replit: the likely cause, how to confirm it, and what a fix involves.",
+  "author": { "name": "VibeFix", "url": "https://vibe-fixer.com" },
+  "homepage": "https://vibe-fixer.com",
+  "repository": "https://github.com/yos88da/vibefix-mcp",
+  "logo": "https://vibe-fixer.com/brand-mark.png",
+  "keywords": ["mcp", "debugging", "lovable", "bolt", "v0", "base44", "replit", "ai-app-builder"]
+}

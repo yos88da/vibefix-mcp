@@ -53,6 +53,12 @@ Add to `.vscode/mcp.json`:
 **Settings → Connectors → Add custom connector**, then paste
 `https://vibe-fixer.com/mcp`.
 
+### As a plugin
+
+This repository is an [Agent Plugins](https://agent-plugins.org) package: `plugin.json`
+and `mcp.json` at the root declare the server, so plugin-aware clients and directories
+can install it straight from `https://github.com/yos88da/vibefix-mcp`.
+
 ### Any other MCP client
 
 Point it at `https://vibe-fixer.com/mcp` over Streamable HTTP. The server

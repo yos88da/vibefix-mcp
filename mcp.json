@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.1.0/mcp.schema.json",
+  "mcpServers": {
+    "vibefix": {
+      "type": "streamable-http",
+      "url": "https://vibe-fixer.com/mcp"
+    }
+  }
+}
