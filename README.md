@@ -53,9 +53,18 @@ Add to `.vscode/mcp.json`:
 **Settings → Connectors → Add custom connector**, then paste
 `https://vibe-fixer.com/mcp`.
 
-### As a plugin
+### As a Claude Code plugin
 
-This repository is an [Agent Plugins](https://agent-plugins.org) package: `plugin.json`
+This repository is its own Claude Code plugin marketplace:
+
+```bash
+claude plugin marketplace add yos88da/vibefix-mcp
+claude plugin install vibefix@vibefix
+```
+
+### As an Agent Plugins package
+
+This repository is also an [Agent Plugins](https://agent-plugins.org) package: `plugin.json`
 and `mcp.json` at the root declare the server, so plugin-aware clients and directories
 can install it straight from `https://github.com/yos88da/vibefix-mcp`.
 

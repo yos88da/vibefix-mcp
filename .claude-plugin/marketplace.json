@@ -1,0 +1,16 @@
+{
+  "name": "vibefix",
+  "owner": {
+    "name": "VibeFix",
+    "url": "https://vibe-fixer.com"
+  },
+  "description": "VibeFix for Claude Code: an AI agent that triages broken AI-built apps.",
+  "plugins": [
+    {
+      "name": "vibefix",
+      "source": "./",
+      "description": "Triage for broken apps built with Lovable, Base44, v0, Bolt, Replit or any AI app builder: the likely cause, how to confirm it, and what a fix involves.",
+      "version": "1.1.0"
+    }
+  ]
+}
