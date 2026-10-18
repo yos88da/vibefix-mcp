@@ -1,7 +1,7 @@
 {
   "name": "vibefix",
-  "version": "1.1.0",
-  "description": "Triage for broken apps built with Lovable, Base44, v0, Bolt, Replit or any AI app builder: the likely cause, how to confirm it, and what a fix involves. Free, no account.",
+  "version": "1.2.0",
+  "description": "An AI agent signs up to your live app like a brand-new person and shows what breaks. Every app gets one free check; Confirm my fix re-checks after you fix.",
   "author": {
     "name": "VibeFix",
     "url": "https://vibe-fixer.com"
@@ -10,14 +10,12 @@
   "repository": "https://github.com/yos88da/vibefix-mcp",
   "keywords": [
     "mcp",
-    "debugging",
-    "lovable",
-    "bolt",
-    "v0",
-    "base44",
-    "replit",
-    "vibe-coding",
-    "ai-app-builder"
+    "testing",
+    "qa",
+    "sign-up",
+    "live-app",
+    "ai-agent",
+    "vibe-coding"
   ],
   "mcpServers": {
     "vibefix": {
