@@ -9,7 +9,7 @@
     {
       "name": "vibefix",
       "source": "./",
-      "description": "An AI agent signs up to your live app like a brand-new person and shows what breaks. Every app gets one free check; Confirm my fix re-checks after you fix.",
+      "description": "Our AI agent finds which cause is breaking your app, fixes it in your code and re-checks your live app. $79, paid after the re-check passes. Every app gets one free check.",
       "version": "1.2.0"
     }
   ]

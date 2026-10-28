@@ -1,6 +1,6 @@
-# VibeFix: an AI agent that signs up to your live app like a new person
+# VibeFix: an AI agent that finds what is breaking your live app and fixes it in your code
 
-VibeFix is an AI agent that signs up to your live, published app like a brand-new person, with a real inbox, on a phone and a computer, and shows what breaks. For each problem it confirms, it tells your AI tool what to fix: where it is, the likely cause, and how you'll know it's fixed.
+VibeFix is an AI agent. A free check signs up to your live, published app like a brand-new person, with a real inbox, on a phone and a computer, and confirms what is broken. Want it fixed? Our AI agent finds which cause is breaking your app, fixes it in your code and re-checks your live app. $79, paid after the re-check passes. If we can't complete your re-check, you get your money back.
 
 Every app gets one free check. This repository is the MCP connection for it: add the server to your AI tool, then ask it to check your live app.
 
@@ -14,18 +14,17 @@ Every app gets one free check. This repository is the MCP connection for it: add
 ## What it does
 
 1. **Check.** `check_live_app` starts a check of your published app. It signs up as a brand-new person with a real inbox, follows the confirmation email, and uses the app on a phone and a computer. Every app gets one free check (one new app a day per account).
-2. **Read.** `get_check_result` returns what it found, with evidence. For each problem it confirms, it says where it is, the likely cause, and how you'll know it's fixed.
-3. **Confirm my fix.** After you fix something, `confirm_fix` re-checks those problems on your live app and marks each one fixed or not.
+2. **Read.** `get_check_result` returns what it found, with evidence.
+3. **Re-check.** `confirm_fix` re-checks those problems on your live app and marks each one fixed or not.
 
-VibeFix checks your app; it never changes it. A full check runs only when you confirm the app is yours; otherwise the check is look-only and does not sign up.
+The free check never changes your app. A full check runs only when you confirm the app is yours; otherwise the check is look-only and does not sign up. Today the fix is for apps built with Lovable, or any app whose code is on GitHub.
 
 ## Prices
 
 | | |
 |---|---|
 | Check | Free. Every app gets one free check. |
-| Confirm my fix | $9 one time: up to 3 re-checks of one result within 7 days. |
-| Confirm my fix, monthly | $19 a month: up to 30 re-checks a month across your results. Nothing runs by itself. Cancel any time. |
+| Fixed in your code | $79 one time, paid after the re-check passes. |
 
 If we can't complete your re-check, you get your money back.
 
@@ -41,7 +40,7 @@ Full details: [vibe-fixer.com/pricing](https://vibe-fixer.com/pricing)
 | `check_repair_status` | OAuth | Says whether one check is still running. Read-only. |
 | `check_live_app` | OAuth | Starts a check of your live app. Every app gets one free check. |
 | `get_check_result` | OAuth | Reads what a check (or a re-check) found. Read-only. |
-| `confirm_fix` | OAuth | Re-checks the reported problems on your live app after a fix. Re-checks are paid (Confirm my fix). |
+| `confirm_fix` | OAuth | Re-checks the reported problems on your live app after a fix. |
 
 ## Connect
 
@@ -81,7 +80,7 @@ This repository is also an [Agent Plugins](https://agent-plugins.org) package (`
 ## Example prompts
 
 - "Check my live app at https://example.com like a brand-new user."
-- "Confirm my fix: re-check the problems from my last check."
+- "Re-check the problems from my last check."
 - "New people say the confirmation email never arrives. What is the likely cause?"
 
 ## Limits
