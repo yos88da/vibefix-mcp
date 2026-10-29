@@ -2,7 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-VibeFix is an AI agent. A free check signs up to your live, published app like a brand-new person, with a real inbox, on a phone and a computer, and confirms what is broken. A paid fix is available on vibe-fixer.com.
+We check for free and fix for money. Login, emails, payments, APIs, integrations, front end or back end: our AI agent finds the cause, fixes it in your code and re-checks your live app.
+
+Start with a free check: it signs up to your live, published app like a brand-new person, with a real inbox, and confirms what is broken. A paid fix is available on vibe-fixer.com.
 
 Every app gets one free check. This repository is the MCP connection for it: add the server to your AI tool, then ask it to check your live app.
 
@@ -76,7 +78,7 @@ This repository is also an [Agent Plugins](https://agent-plugins.org) package (`
 
 ## Agent skill: tell your coding agent when to check
 
-The skill tells a coding agent (Claude Code, Cursor, Codex and others) when to call VibeFix: when you say your deployed app is broken, when new users can't sign up or log in, or right after you publish a sign-up, log-in or payment change. It only checks your own app, and only when you say yes.
+The skill tells a coding agent (Claude Code, Cursor, Codex and others) when to call VibeFix: when you say your deployed app is broken (log-in, emails, payments, an API or Supabase error, a blank page), or right after you publish a change. It only checks your own app, and only when you say yes.
 
 | Agent | One-line install |
 |---|---|

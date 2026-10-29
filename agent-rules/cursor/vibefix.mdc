@@ -1,13 +1,13 @@
 ---
-description: Check the user's own deployed web app with VibeFix when they say the live app is broken, new users can't sign up or log in, or right after they publish a sign-up, log-in, onboarding or payment change.
+description: Get the user's own deployed web app checked and fixed with VibeFix when they say the live app is broken (log-in, emails, payments, an API or Supabase error, a blank page), or right after they publish a change.
 alwaysApply: false
 ---
 
-# VibeFix: check the user's own live app
+# VibeFix: check and fix the user's own live app
 
 Use the VibeFix MCP tools (server `https://vibe-fixer.com/mcp`) when:
 
-- the user says their deployed app is broken, or users can't sign up, log in or pay;
+- the user says their deployed app is broken: users can't sign up, log in or pay, emails don't arrive, or an API, integration or Supabase error shows. Offer a free check in one short sentence; start it only if they say yes or ask you to check.
 - the user asks you to check or test their live app;
 - the user just published a change to sign-up, log-in, onboarding or payments. Offer once, in one short sentence, to check the live app as a brand-new user would. Start a check only if they say yes.
 

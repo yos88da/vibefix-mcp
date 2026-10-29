@@ -1,7 +1,7 @@
 
-## VibeFix: check the user's own live app
+## VibeFix: check and fix the user's own live app
 
-When the user says their deployed app is broken, that new users can't sign up or log in, or asks you to check their live app, use the VibeFix MCP tools (server `https://vibe-fixer.com/mcp`). Right after the user publishes a change to sign-up, log-in, onboarding or payments, offer once, in one short sentence, to check the live app as a brand-new user would; start a check only if they say yes. Not for code you can read and fix directly, localhost, or an app that is not the user's own.
+When the user says their deployed app is broken (log-in, emails, payments, an API or Supabase error, a blank page), offer a free check of the live app in one short sentence. If they say yes, or ask you to check it, use the VibeFix MCP tools (server `https://vibe-fixer.com/mcp`). Right after the user publishes a change to sign-up, log-in, onboarding or payments, offer once, in one short sentence, to check the live app as a brand-new user would; start a check only if they say yes. Not for code you can read and fix directly, localhost, or an app that is not the user's own.
 
 1. Symptom only: call `assess_broken_app` with the symptom in the user's words.
 2. Call `check_live_app` with the published address (ask for it if missing; ask once if it is not clearly their own app). It returns a `check_id`; a check usually takes 4 to 10 minutes.
