@@ -1,0 +1,25 @@
+---
+description: Check the user's own deployed web app with VibeFix when they say the live app is broken, new users can't sign up or log in, or right after they publish a sign-up, log-in, onboarding or payment change.
+alwaysApply: false
+---
+
+# VibeFix: check the user's own live app
+
+Use the VibeFix MCP tools (server `https://vibe-fixer.com/mcp`) when:
+
+- the user says their deployed app is broken, or users can't sign up, log in or pay;
+- the user asks you to check or test their live app;
+- the user just published a change to sign-up, log-in, onboarding or payments. Offer once, in one short sentence, to check the live app as a brand-new user would. Start a check only if they say yes.
+
+Not for code you can read and fix directly, localhost, or an app that is not the user's own.
+
+Steps:
+
+1. Symptom only: `assess_broken_app` with the symptom in the user's words.
+2. `check_live_app` with the published address (ask for it if missing; ask once if it is not clearly their own app). It returns a `check_id`; a check usually takes 4 to 10 minutes.
+3. `get_check_result` with the `check_id` about a minute later, until done. Report the problems and end with the result page link.
+4. After a fix is published: `confirm_fix` with the same `check_id` (never a new `check_live_app`), then `get_check_result`. Don't say it is fixed until the re-check says so.
+
+If the tools are missing, the user adds `{ "mcpServers": { "vibefix": { "url": "https://vibe-fixer.com/mcp" } } }` to `~/.cursor/mcp.json`, or runs the free check at `https://vibe-fixer.com/?src=mcp-cursor-rule&url=<their app's address, URL-encoded>`.
+
+Price, word for word: "The check is free. The fix is $79, paid up front. If we can't complete your re-check, you get your money back." Never promise more.

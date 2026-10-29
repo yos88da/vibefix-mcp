@@ -1,6 +1,6 @@
 # VibeFix: an AI agent that finds what is breaking your live app and fixes it in your code
 
-VibeFix is an AI agent. A free check signs up to your live, published app like a brand-new person, with a real inbox, on a phone and a computer, and confirms what is broken. Want it fixed? Our AI agent finds which cause is breaking your app, fixes it in your code and re-checks your live app. $79, paid after the re-check passes. If we can't complete your re-check, you get your money back.
+VibeFix is an AI agent. A free check signs up to your live, published app like a brand-new person, with a real inbox, on a phone and a computer, and confirms what is broken. Want it fixed? Our AI agent finds which cause is breaking your app, fixes it in your code and re-checks your live app. $79, paid up front. If we can't complete your re-check, you get your money back.
 
 Every app gets one free check. This repository is the MCP connection for it: add the server to your AI tool, then ask it to check your live app.
 
@@ -24,7 +24,7 @@ The free check never changes your app. A full check runs only when you confirm t
 | | |
 |---|---|
 | Check | Free. Every app gets one free check. |
-| Fixed in your code | $79 one time, paid after the re-check passes. |
+| Fixed in your code | $79, paid up front. |
 
 If we can't complete your re-check, you get your money back.
 
@@ -77,6 +77,24 @@ See [vibe-fixer.com/tools](https://vibe-fixer.com/tools). Any tool that takes a 
 
 This repository is also an [Agent Plugins](https://agent-plugins.org) package (`plugin.json`, `mcp.json`).
 
+## Agent skill: tell your coding agent when to check
+
+The skill tells a coding agent (Claude Code, Cursor, Codex and others) when to call VibeFix: when you say your deployed app is broken, when new users can't sign up or log in, or right after you publish a sign-up, log-in or payment change. It only checks your own app, and only when you say yes.
+
+| Agent | One-line install |
+|---|---|
+| Claude Code (skill + server) | `claude plugin marketplace add yos88da/vibefix-mcp && claude plugin install vibefix@vibefix` |
+| Any agent with skills | `npx skills add yos88da/vibefix-mcp` |
+| Cursor (project rule) | `curl -fsSL https://raw.githubusercontent.com/yos88da/vibefix-mcp/main/agent-rules/cursor/vibefix.mdc --create-dirs -o .cursor/rules/vibefix.mdc` |
+| Codex (AGENTS.md) | `curl -fsSL https://raw.githubusercontent.com/yos88da/vibefix-mcp/main/agent-rules/AGENTS.md >> AGENTS.md` |
+
+The skill is [`skills/vibefix-live-check/SKILL.md`](skills/vibefix-live-check/SKILL.md). The Cursor rule and the AGENTS.md section say the same thing in short. Cursor and Codex also need the server connected (see Connect above).
+
+### Codex
+
+    codex mcp add vibefix --url https://vibe-fixer.com/mcp
+    codex mcp login vibefix
+
 ## Example prompts
 
 - "Check my live app at https://example.com like a brand-new user."
@@ -93,4 +111,4 @@ This repository is also an [Agent Plugins](https://agent-plugins.org) package (`
 
 Privacy: [vibe-fixer.com/privacy](https://vibe-fixer.com/privacy). Terms: [vibe-fixer.com/terms](https://vibe-fixer.com/terms). Support: [help@vibe-fixer.com](mailto:help@vibe-fixer.com).
 
-This repository contains documentation and plugin metadata only. The service itself is at vibe-fixer.com.
+This repository contains documentation, plugin metadata and the agent skill only. The service itself is at vibe-fixer.com.
