@@ -96,7 +96,7 @@ The skill is [`skills/vibefix-live-check/SKILL.md`](skills/vibefix-live-check/SK
 
 ## GitHub Action: check after every deploy
 
-[yos88da/vibefix-signup-check](https://github.com/yos88da/vibefix-signup-check) runs the free check after each deploy and reports on the pull request whether a new user can get in. No API key: it proves which repo it runs in with GitHub's own token.
+[VibeFix sign-up check](https://github.com/marketplace/actions/vibefix-sign-up-check) on the GitHub Marketplace ([source](https://github.com/yos88da/vibefix-signup-check)) runs the free check after each deploy and reports on the pull request whether a new user can get in. No API key: it proves which repo it runs in with GitHub's own token.
 
     - uses: yos88da/vibefix-signup-check@v1
 
