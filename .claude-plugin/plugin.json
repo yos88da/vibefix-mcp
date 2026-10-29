@@ -1,7 +1,7 @@
 {
   "name": "vibefix",
-  "version": "1.3.0",
-  "description": "Our AI agent finds which cause is breaking your app, fixes it in your code and re-checks your live app. $79, paid up front. If we can't complete your re-check, you get your money back. Every app gets one free check.",
+  "version": "1.3.1",
+  "description": "Drop your live link: our AI agent signs up like a new user and shows you, with a screenshot, whether your app breaks for them. Free. A paid fix is available on vibe-fixer.com.",
   "author": {
     "name": "VibeFix",
     "url": "https://vibe-fixer.com"

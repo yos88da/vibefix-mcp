@@ -1,6 +1,6 @@
 # VibeFix: an AI agent that finds what is breaking your live app and fixes it in your code
 
-VibeFix is an AI agent. A free check signs up to your live, published app like a brand-new person, with a real inbox, on a phone and a computer, and confirms what is broken. Want it fixed? Our AI agent finds which cause is breaking your app, fixes it in your code and re-checks your live app. $79, paid up front. If we can't complete your re-check, you get your money back.
+VibeFix is an AI agent. A free check signs up to your live, published app like a brand-new person, with a real inbox, on a phone and a computer, and confirms what is broken. A paid fix is available on vibe-fixer.com.
 
 Every app gets one free check. This repository is the MCP connection for it: add the server to your AI tool, then ask it to check your live app.
 
@@ -19,16 +19,11 @@ Every app gets one free check. This repository is the MCP connection for it: add
 
 The free check never changes your app. A full check runs only when you confirm the app is yours; otherwise the check is look-only and does not sign up. Today the fix is for apps built with Lovable, or any app whose code is on GitHub.
 
-## Prices
+## Free check, paid fix
 
-| | |
-|---|---|
-| Check | Free. Every app gets one free check. |
-| Fixed in your code | $79, paid up front. |
+The check is free: every app gets one free check. A paid fix is available on vibe-fixer.com.
 
-If we can't complete your re-check, you get your money back.
-
-Full details: [vibe-fixer.com/pricing](https://vibe-fixer.com/pricing)
+Details: [vibe-fixer.com](https://vibe-fixer.com)
 
 ## Tools
 

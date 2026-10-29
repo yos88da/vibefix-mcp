@@ -42,17 +42,16 @@ Tell the user they can connect it in one step, then ask you again:
 
 Or they can run the free check in the browser, with no account: `https://vibe-fixer.com/?src=mcp-skill&url=<their app's address, URL-encoded>`. They tick that it is their app and press the free-check button.
 
-## What it costs (say it exactly like this)
+## The fix
 
-The check is free. The fix is $79, paid up front. If we can't complete your re-check, you get your money back.
+The check is free. A paid fix is available on vibe-fixer.com: the user asks for it from their result page. If they ask about the fix, point them to https://vibe-fixer.com.
 
-The free check says how many problems a new user would hit, what each one is and how serious it is. It does not say the cause or how to fix it. For the fix: Our AI agent finds which cause is breaking your app, fixes it in your code and re-checks your live app. The user asks for it with "Fix it — $79" on their result page.
+The free check says how many problems a new user would hit, what each one is and how serious it is. It does not say the cause or how to fix it.
 
 Do not promise more than this, and do not promise a fix.
 
 ## Links
 
 - Website: https://vibe-fixer.com
-- Pricing: https://vibe-fixer.com/pricing
 - Privacy: https://vibe-fixer.com/privacy · Terms: https://vibe-fixer.com/terms
 - Support: help@vibe-fixer.com
