@@ -1,10 +1,20 @@
-# VibeFix: an AI agent that finds what is breaking your live app and fixes it in your code
+# VibeFix: fixed in your code, then tested on your live app.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-We check for free and fix for money. Login, emails, payments, APIs, integrations, front end or back end: our AI agent finds the cause, fixes it in your code and re-checks your live app.
+App broke after you published it? Our AI agent fixes it in your code, then tests your live app again so you see the result yourself. The first check is free.
 
-Start with a free check: it signs up to your live, published app like a brand-new person, with a real inbox, and confirms what is broken. A paid fix is available on vibe-fixer.com.
+You built the app with an AI tool, published it, and then something stopped working. Maybe new users can't finish signing up. Maybe the confirmation email never arrives, or checkout throws an error. Maybe you asked your builder's AI to fix it, it said it had, and the problem is still there for your users.
+
+VibeFix starts where your users start. Paste the link to your live app and our AI agent signs up as a brand-new user. It walks through your pages the way a stranger would and sends you a screenshot of the problem it hits. The free check never changes your app.
+
+If you want the problem fixed, the agent goes into your code. It looks for the cause, makes the change in your code, and then opens your live app again to test that the problem is gone. You see the re-check, so you're not taking anyone's word that it's fixed.
+
+What it can work on: sign-up and login, emails that don't arrive or link to the wrong place, payments, API, integration and Supabase errors, and front-end bugs, as long as the cause is in the code.
+
+Today the fix is for apps built with Lovable, or any app whose code is on GitHub.
+
+A paid fix is available on vibe-fixer.com.
 
 Every app gets one free check. This repository is the MCP connection for it: add the server to your AI tool, then ask it to check your live app.
 

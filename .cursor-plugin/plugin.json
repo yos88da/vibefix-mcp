@@ -1,8 +1,8 @@
 {
   "name": "vibefix",
   "displayName": "VibeFix",
-  "version": "1.4.0",
-  "description": "We check for free and fix for money. Login, emails, payments, APIs, integrations, front end or back end: our AI agent finds the cause, fixes it in your code and re-checks your live app.",
+  "version": "1.5.0",
+  "description": "App broke after publishing? VibeFix's AI agent fixes it in your code and tests the live app again so you see the result. Start with a free check.",
   "author": {
     "name": "VibeFix",
     "url": "https://vibe-fixer.com"

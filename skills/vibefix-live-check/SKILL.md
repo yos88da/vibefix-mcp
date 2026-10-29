@@ -5,7 +5,7 @@ description: Get the user's own deployed web app checked and fixed with VibeFix.
 
 # VibeFix: check and fix the user's own live app
 
-We check for free and fix for money. Login, emails, payments, APIs, integrations, front end or back end: our AI agent finds the cause, fixes it in your code and re-checks your live app.
+App broke after publishing? VibeFix's AI agent fixes it in your code and tests the live app again so you see the result. Start with a free check.
 
 The free check opens the live, published app as a brand-new person: it signs up with a real inbox, follows the confirmation email and uses the app on a phone and a computer. It finds what you cannot see from the code or the preview: emails that never arrive, confirmation links that open the wrong site, buttons covered on a phone, first steps that go nowhere.
 
