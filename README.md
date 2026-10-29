@@ -88,14 +88,14 @@ This repository is also an [Agent Plugins](https://agent-plugins.org) package (`
 
 ## Agent skill: tell your coding agent when to check
 
-The skill tells a coding agent (Claude Code, Cursor, Codex and others) when to call VibeFix: when you say your deployed app is broken (log-in, emails, payments, an API or Supabase error, a blank page), or right after you publish a change. It only checks your own app, and only when you say yes.
+The skill tells a coding agent when to call VibeFix (tested in Claude Code; install lines for Cursor and Codex are not yet tested end to end): when you say your deployed app is broken (log-in, emails, payments, an API or Supabase error, a blank page), or right after you publish a change. It only checks your own app, and only when you say yes.
 
 | Agent | One-line install |
 |---|---|
 | Claude Code (skill + server) | `claude plugin marketplace add yos88da/vibefix-mcp && claude plugin install vibefix@vibefix` |
 | Any agent with skills | `npx skills add yos88da/vibefix-mcp` |
-| Cursor (project rule) | `curl -fsSL https://raw.githubusercontent.com/yos88da/vibefix-mcp/main/agent-rules/cursor/vibefix.mdc --create-dirs -o .cursor/rules/vibefix.mdc` |
-| Codex (AGENTS.md) | `curl -fsSL https://raw.githubusercontent.com/yos88da/vibefix-mcp/main/agent-rules/AGENTS.md >> AGENTS.md` |
+| Cursor (project rule; not yet tested end to end) | `curl -fsSL https://raw.githubusercontent.com/yos88da/vibefix-mcp/main/agent-rules/cursor/vibefix.mdc --create-dirs -o .cursor/rules/vibefix.mdc` |
+| Codex (AGENTS.md; not yet tested end to end) | `curl -fsSL https://raw.githubusercontent.com/yos88da/vibefix-mcp/main/agent-rules/AGENTS.md >> AGENTS.md` |
 
 The skill is [`skills/vibefix-live-check/SKILL.md`](skills/vibefix-live-check/SKILL.md). The Cursor rule and the AGENTS.md section say the same thing in short. Cursor and Codex also need the server connected (see Connect above).
 
