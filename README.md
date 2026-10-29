@@ -1,5 +1,7 @@
 # VibeFix: an AI agent that finds what is breaking your live app and fixes it in your code
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 VibeFix is an AI agent. A free check signs up to your live, published app like a brand-new person, with a real inbox, on a phone and a computer, and confirms what is broken. A paid fix is available on vibe-fixer.com.
 
 Every app gets one free check. This repository is the MCP connection for it: add the server to your AI tool, then ask it to check your live app.

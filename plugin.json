@@ -17,5 +17,6 @@
     "live-app",
     "ai-agent",
     "vibe-coding"
-  ]
+  ],
+  "license": "MIT"
 }

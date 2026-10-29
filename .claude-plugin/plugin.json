@@ -25,5 +25,6 @@
         "X-VibeFix-Source": "mcp-plugin"
       }
     }
-  }
+  },
+  "license": "MIT"
 }
