@@ -138,7 +138,7 @@ VibeFix also works on Shopify stores. The [free Shopify homepage accessibility c
   - `check_live_app`: the address of your live app, plus up to 3 things that must work if you give them.
   - `list_projects`: nothing.
   - `check_repair_status`, `get_check_result` and `confirm_fix`: the id of a check on your own VibeFix account.
-- **What else reaches our server:** the plugin sends no code or files from your computer. Like any web request, a call also reaches our server with your sign-in token and your IP address.
+- **What else reaches our server:** the plugin sends no code or files from your computer. Like any web request, a call also reaches our server with your IP address, and with your sign-in token for the sign-in tools.
 - **Sign-in:** tools marked OAuth in the table above ask you to sign in to vibe-fixer.com in your browser. The plugin never sees or stores a password.
 - **Privacy:** our [privacy policy](https://vibe-fixer.com/privacy) covers your account and MCP connections.
 
