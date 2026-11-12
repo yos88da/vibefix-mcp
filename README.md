@@ -124,6 +124,10 @@ See its README for the workflow, the permissions and which addresses it checks.
 - The AI agent is often right and sometimes wrong. Look at the evidence each finding shows.
 - `assess_broken_app` works from a description alone and says so in its answer.
 
+## Also from VibeFix: Shopify stores
+
+VibeFix also works on Shopify stores. The [free Shopify homepage accessibility checker](https://vibe-fixer.com/tools/shopify-accessibility-checker) runs an automated, read-only check of a store's public homepage. It tests only what software can test of WCAG 2.0 and 2.1, Levels A and AA. It doesn't test the newer WCAG 2.2 criteria, such as target size. More: [VibeFix for Shopify stores](https://vibe-fixer.com/stores).
+
 ## Privacy and support
 
 Privacy: [vibe-fixer.com/privacy](https://vibe-fixer.com/privacy). Terms: [vibe-fixer.com/terms](https://vibe-fixer.com/terms). Support: [help@vibe-fixer.com](mailto:help@vibe-fixer.com).
