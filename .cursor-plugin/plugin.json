@@ -1,10 +1,10 @@
 {
-  "name": "vibefix",
-  "displayName": "VibeFix",
-  "version": "1.5.0",
+  "name": "vibe-fixer",
+  "displayName": "VibeFix (vibe-fixer.com)",
+  "version": "1.6.0",
   "description": "App broke after publishing? VibeFix's AI agent fixes it in your code and tests the live app again so you see the result. Start with a free check.",
   "author": {
-    "name": "VibeFix",
+    "name": "VibeFix (vibe-fixer.com)",
     "url": "https://vibe-fixer.com"
   },
   "homepage": "https://vibe-fixer.com",

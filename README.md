@@ -82,7 +82,7 @@ See [vibe-fixer.com/tools](https://vibe-fixer.com/tools). Any tool that takes a 
 ### As a plugin
 
     claude plugin marketplace add yos88da/vibefix-mcp
-    claude plugin install vibefix@vibefix
+    claude plugin install vibe-fixer@vibe-fixer
 
 This repository is also an [Agent Plugins](https://agent-plugins.org) package (`plugin.json`, `mcp.json`).
 
@@ -92,7 +92,7 @@ The skill tells a coding agent when to call VibeFix (tested in Claude Code; inst
 
 | Agent | One-line install |
 |---|---|
-| Claude Code (skill + server) | `claude plugin marketplace add yos88da/vibefix-mcp && claude plugin install vibefix@vibefix` |
+| Claude Code (skill + server) | `claude plugin marketplace add yos88da/vibefix-mcp && claude plugin install vibe-fixer@vibe-fixer` |
 | Any agent with skills | `npx skills add yos88da/vibefix-mcp` |
 | Cursor (project rule; not yet tested end to end) | `curl -fsSL https://raw.githubusercontent.com/yos88da/vibefix-mcp/main/agent-rules/cursor/vibefix.mdc --create-dirs -o .cursor/rules/vibefix.mdc` |
 | Codex (AGENTS.md; not yet tested end to end) | `curl -fsSL https://raw.githubusercontent.com/yos88da/vibefix-mcp/main/agent-rules/AGENTS.md >> AGENTS.md` |
@@ -127,6 +127,20 @@ See its README for the workflow, the permissions and which addresses it checks.
 ## Also from VibeFix: Shopify stores
 
 VibeFix also works on Shopify stores. The [free Shopify homepage accessibility checker](https://vibe-fixer.com/tools/shopify-accessibility-checker) runs an automated, read-only check of a store's public homepage. It tests only what software can test of WCAG 2.0 and 2.1, Levels A and AA. It doesn't test the newer WCAG 2.2 criteria, such as target size. More: [VibeFix for Shopify stores](https://vibe-fixer.com/stores).
+
+## What this plugin runs and sends
+
+- **Runs nothing on your computer.** The plugin is one skill (instructions for Claude) and one remote MCP server reference. It has no hooks, scripts or packages.
+- **Connects to one server only:** `https://vibe-fixer.com/mcp`, operated by VibeFix. Each request carries the header `X-VibeFix-Source: mcp-plugin`, so we can count plugin use.
+- **What a tool call sends:** only what you or Claude put into that call.
+  - `assess_broken_app`: your description of the problem, plus the builder and the app address if you give them.
+  - `get_fix_options`: the app address, if you give one.
+  - `check_live_app`: the address of your live app, plus up to 3 things that must work if you give them.
+  - `list_projects`: nothing.
+  - `check_repair_status`, `get_check_result` and `confirm_fix`: the id of a check on your own VibeFix account.
+- **What else reaches our server:** the plugin sends no code or files from your computer. Like any web request, a call also reaches our server with your sign-in token and your IP address.
+- **Sign-in:** tools marked OAuth in the table above ask you to sign in to vibe-fixer.com in your browser. The plugin never sees or stores a password.
+- **Privacy:** our [privacy policy](https://vibe-fixer.com/privacy) covers your account and MCP connections.
 
 ## Privacy and support
 
